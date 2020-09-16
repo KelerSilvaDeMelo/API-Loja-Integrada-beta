@@ -3,4 +3,6 @@ API Loja Integrada (beta) implementada em Delphi(R) Community Edition na forma d
 
 https://comunidade.lojaintegrada.com.br/t/api-de-integracao-loja-integrada/52862/12?u=keler.melo
 
+https://br.linkedin.com/in/programadordelphiparanavai
+
 https://www.embarcadero.com/br/products/delphi/starter
