@@ -1,0 +1,197 @@
+object FormparametrosHTTP: TFormparametrosHTTP
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 592
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object LayoutParametrosHTTP: TLayout
+    Align = Contents
+    Size.Width = 320.000000000000000000
+    Size.Height = 592.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object RectangleTapaFundo: TRectangle
+      Align = Contents
+      Fill.Color = xE63D4260
+      Size.Width = 320.000000000000000000
+      Size.Height = 592.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+    end
+    object Rectangle1: TRectangle
+      Align = Client
+      Fill.Color = xE6E0E0E0
+      Size.Width = 320.000000000000000000
+      Size.Height = 552.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object Grid1: TGrid
+        Align = Client
+        CanFocus = True
+        ClipChildren = True
+        Size.Width = 320.000000000000000000
+        Size.Height = 552.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        RowCount = 3
+        Viewport.Width = 320.000000000000000000
+        Viewport.Height = 552.000000000000000000
+      end
+    end
+    object LayoutCabecalho: TLayout
+      Align = MostTop
+      Size.Width = 320.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object RectangleFundoDoCabecalho: TRectangle
+        Align = Contents
+        Fill.Color = claWhite
+        Size.Width = 320.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+      end
+      object ShadowEffectCabecalho: TShadowEffect
+        Distance = 3.000000000000000000
+        Direction = 45.000000000000000000
+        Softness = 0.200000002980232200
+        Opacity = 0.850000023841857900
+        ShadowColor = xFFB0BF34
+      end
+      object ImageSalva: TImage
+        MultiResBitmap.Height = 72
+        MultiResBitmap.Width = 72
+        MultiResBitmap.LoadSize = 2
+        MultiResBitmap = <
+          item
+            Width = 27
+            Height = 27
+            PNG = {
+              89504E470D0A1A0A0000000D494844520000001B0000001B08060000008DD4F4
+              55000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              013449444154484BED96316A024114863721450A2F1030E02152A6D02A042C85
+              B4112F60699F03E40441418414496DA99094815C20658A14290453080924DFBF
+              3B2EBA8EBB33EB2A29FCE0E3CDC8EA9B79F31C0DF614C181898B54B085E570E6
+              C71D3E47C36CCEF07703A7788E56923BBBC536BEA1EB0A4BD88886215F788999
+              EFEFA256A8E88ACAEEB4C343138B46BB1DE252C26D25134AA8468BD966B21592
+              0DA2B3BA461DF2A75E70E008D77D4D7AD88C86ABCC1BA428971A6DA765FCF7C9
+              DE718CAE671AE393EC07D53CA758C313EC606ED21AE4066DF4D1F6BCCCDD208F
+              262679303113DF32DA989998894FB20B1393D44DF426EDCC74935771912BFC46
+              DBF332F5CCD24AA28B75844FA80F79C57BD475B58E0F13AD68E5B615E655BF75
+              31B6FF204AA8F21C87B37C4C70802FE16C4F7104C11F264D7B2F5EE48B340000
+              000049454E44AE426082}
+            FileName = 
+              'C:\Lab RX CE\API Loja Integrada App\Imagens\Icone Material IO - ' +
+              'Conteudo\save-black-android\res\drawable-hdpi\baseline_save_blac' +
+              'k_18.png'
+          end>
+        Align = Right
+        Margins.Left = 3.000000000000000000
+        Margins.Top = 3.000000000000000000
+        Margins.Right = 3.000000000000000000
+        Margins.Bottom = 3.000000000000000000
+        Position.X = 283.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 34.000000000000000000
+        Size.Height = 34.000000000000000000
+        Size.PlatformDefault = False
+        OnClick = ImageSalvaClick
+        object FillRGBEffect1: TFillRGBEffect
+          Color = xFF1D437A
+        end
+      end
+      object LabelTitulo: TLabel
+        Align = Client
+        Margins.Left = 3.000000000000000000
+        Margins.Right = 3.000000000000000000
+        Size.Width = 234.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxheaderlabel'
+        Text = 'Par'#226'metros HTTP'
+        TabOrder = 0
+      end
+      object ImageIcone: TImage
+        MultiResBitmap.Height = 72
+        MultiResBitmap.Width = 72
+        MultiResBitmap.LoadSize = 2
+        MultiResBitmap = <
+          item
+            Width = 27
+            Height = 27
+            PNG = {
+              89504E470D0A1A0A0000000D494844520000001B0000001B08060000008DD4F4
+              55000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              014649444154484BED95BD4A0341144657B1B04823A44C696161913282292576
+              0A162982A49040C0D24A2C925E4B410B7D070B1BD12E8276A608A4116C7C001F
+              20A0E79BDD84A03B33BB38068B1C38D9B9B7983B3FBB37D19C102C244F51C106
+              164C14860FBCC68189128EF0F30FDDC3C9CE5EB08C8FF8AA44205671131F704B
+              09F1865A41D344E1D07C9A57F3478BFA9915FFBA581D9F50C7728F35CC4D963B
+              3BC0F1DB35ADF23672DF99DEA60BBC34D14FCE31D3B7E92B76883D6CE3921229
+              2CE329964CE4C055AC8867F1D08B16A3A33A31910557B175D4AAB3A29D77D17A
+              A4AE62EFC9332FB6E3761653DBBA8D8799B94135DF547C2FC83E5EA1758229D4
+              578FE3613ABE622AD2C21554D37659456713F7150BCA4C8B69FB62886BA80BEE
+              2B1108FD47EEE2336E28213AF8BDE785D4F4DCF1CEF4F1EEE0B689C231429DD6
+              5D329EF35BA2E80B98776188E5376A3E0000000049454E44AE426082}
+            FileName = 
+              'C:\Lab RX CE\API Loja Integrada App\Imagens\Icone Material IO - ' +
+              'Dispositivo\Icone SystemDayDream\settings_system_daydream-black-' +
+              'android\res\drawable-hdpi\baseline_settings_system_daydream_blac' +
+              'k_18.png'
+          end>
+        Align = Left
+        Margins.Left = 3.000000000000000000
+        Margins.Top = 3.000000000000000000
+        Margins.Right = 3.000000000000000000
+        Margins.Bottom = 3.000000000000000000
+        Position.X = 3.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 34.000000000000000000
+        Size.Height = 34.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+  object ActionList1: TActionList
+    Left = 232
+    Top = 264
+    object ActionAltera: TAction
+      Text = 'Altera'
+    end
+    object ActionRetorna: TAction
+      Text = 'Retorna'
+      OnExecute = ActionRetornaExecute
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = DataModulePrincipal.FDMemTableParametroHTTP
+    ScopeMappings = <>
+    Left = 144
+    Top = 264
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 52
+    Top = 261
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = Grid1
+      Columns = <
+        item
+          MemberName = 'Key'
+          Width = 150
+        end
+        item
+          MemberName = 'Value'
+          Width = 150
+        end>
+    end
+  end
+end

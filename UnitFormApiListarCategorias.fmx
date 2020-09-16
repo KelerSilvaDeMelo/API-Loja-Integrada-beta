@@ -1,0 +1,553 @@
+object FormApiListarCategorias: TFormApiListarCategorias
+  Left = 0
+  Top = 0
+  Caption = 'API - Listar Categorias'
+  ClientHeight = 592
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object LayoutApiListarCategorias: TLayout
+    Align = Contents
+    Size.Width = 320.000000000000000000
+    Size.Height = 592.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object TabControlAPI: TTabControl
+      Align = Client
+      Size.Width = 320.000000000000000000
+      Size.Height = 552.000000000000000000
+      Size.PlatformDefault = False
+      TabHeight = 49.000000000000000000
+      TabIndex = 0
+      TabOrder = 2
+      TabPosition = PlatformDefault
+      Sizes = (
+        320s
+        503s
+        320s
+        503s
+        320s
+        503s
+        320s
+        503s)
+      object TabItemListaCategoria: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 80.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Lista Categoria'
+        ExplicitSize.cx = 80.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        object Rectangle1: TRectangle
+          Align = Contents
+          Size.Width = 320.000000000000000000
+          Size.Height = 503.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object ButtonHttpRequest: TButton
+            Action = ActionRequest
+            Align = Top
+            Enabled = True
+            ImageIndex = -1
+            Margins.Left = 8.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Position.X = 8.000000000000000000
+            Position.Y = 8.000000000000000000
+            Size.Width = 304.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+          end
+          object ListViewCategoria: TListView
+            ItemAppearanceClassName = 'TListItemAppearance'
+            ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+            HeaderAppearanceClassName = 'TListHeaderObjects'
+            FooterAppearanceClassName = 'TListHeaderObjects'
+            Align = Client
+            Margins.Left = 8.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Margins.Bottom = 8.000000000000000000
+            Size.Width = 304.000000000000000000
+            Size.Height = 435.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+          end
+        end
+      end
+      object TabItemHttpRequestGet: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 80.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Http Request Get'
+        ExplicitSize.cx = 106.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        object EditURL: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          TabOrder = 0
+          Text = 'https://api.awsli.com.br/v1'
+          Position.X = 8.000000000000000000
+          Position.Y = 31.000000000000000000
+          Margins.Left = 8.000000000000000000
+          Margins.Right = 8.000000000000000000
+          Size.Width = 304.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object LabelURL: TLabel
+          Align = Top
+          Margins.Left = 8.000000000000000000
+          Margins.Top = 8.000000000000000000
+          Margins.Right = 8.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 304.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'URL Base:'
+          TabOrder = 1
+        end
+        object LabelParametros: TLabel
+          Align = Top
+          Margins.Left = 8.000000000000000000
+          Margins.Top = 8.000000000000000000
+          Margins.Right = 8.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 134.000000000000000000
+          Size.Width = 304.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Par'#226'metros:'
+          TabOrder = 2
+        end
+        object GridParametros: TGrid
+          Align = Top
+          CanFocus = True
+          ClipChildren = True
+          Margins.Left = 8.000000000000000000
+          Margins.Right = 8.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 157.000000000000000000
+          Size.Width = 304.000000000000000000
+          Size.Height = 188.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          RowCount = 3
+          Viewport.Width = 304.000000000000000000
+          Viewport.Height = 188.000000000000000000
+        end
+        object LabelURI: TLabel
+          Align = Top
+          Margins.Left = 8.000000000000000000
+          Margins.Top = 8.000000000000000000
+          Margins.Right = 8.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 71.000000000000000000
+          Size.Width = 304.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'URI'
+          TabOrder = 4
+        end
+        object EditURI: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          TabOrder = 5
+          Text = '/categoria'
+          Position.X = 8.000000000000000000
+          Position.Y = 94.000000000000000000
+          Margins.Left = 8.000000000000000000
+          Margins.Right = 8.000000000000000000
+          Size.Width = 304.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object TabItemHttpResponseJson: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 80.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Http Response JSon'
+        ExplicitSize.cx = 106.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        object MemoResponse: TMemo
+          Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+          DataDetectorTypes = []
+          Align = Client
+          Size.Width = 320.000000000000000000
+          Size.Height = 503.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Viewport.Width = 320.000000000000000000
+          Viewport.Height = 503.000000000000000000
+        end
+      end
+      object TabItemJsomParseGrid: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 80.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'JSon Parse Grid'
+        ExplicitSize.cx = 108.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        object GridCategoria: TGrid
+          Align = Client
+          CanFocus = True
+          ClipChildren = True
+          Size.Width = 320.000000000000000000
+          Size.Height = 503.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          RowCount = 9
+          Viewport.Width = 320.000000000000000000
+          Viewport.Height = 503.000000000000000000
+        end
+      end
+    end
+    object LayoutCabecalho: TLayout
+      Align = MostTop
+      Size.Width = 320.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object RectangleFundoDoCabecalho: TRectangle
+        Align = Contents
+        Fill.Color = claWhitesmoke
+        Size.Width = 320.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+      end
+      object ImageCabecalho: TImage
+        MultiResBitmap.Height = 32
+        MultiResBitmap.Width = 280
+        MultiResBitmap.LoadSize = 2
+        MultiResBitmap = <
+          item
+            Width = 36
+            Height = 36
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
+              98000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              0191494441545847DD963D4EC34010462D444141414949C91128B81347A1A4E4
+              001494292968E969299038000D0512CC97EC27269359EF8FBD5E8B273D39B188
+              F765B36B33FC57CE83AB0021AFC1EE518CF909768DB2315DA3623174D1A8540C
+              5D242A3786368F7A14BD81C7BC179B119BA1DBA03DFF2C9E8A4DB15108213AAA
+              49CCA578271E6FDFFDC1281D4370CE8BC17BFC7CD56B0A311F22BEED8368A3CE
+              C2D1E3241C096210896B552D741D43BDA81C740C2D8AF26268691466CAC65037
+              EA281C09629EC458FDBBF8BD7BB9C74DD0F225BEEC5E1E901A6B7466A0B78001
+              42F8375E14D0BBCFEACED41C31745294FDC962BC85A3E5221C35DE3910BB06C0
+              8E3DD8B5A959CAF9E62533493126C6769912357B0C198BC2162EDDF6581FDEB5
+              B2628817E53D0E72C062B5514531444779312533A5A3AA62083E88BBB38DE1E3
+              C05B5338E7DDD111851B61754C0CFB6CD2517A01D73EFB8AB03114213A86368F
+              DA8876D094F87FAA19D7E2A7E80DEC396901E7921BB5480C49452D1A4362515D
+              62888DEA1A4318B58A187225AE26664686E117574F24FC3F5AD48D0000000049
+              454E44AE426082}
+            FileName = 
+              'C:\Lab RX CE\API Loja Integrada App\Imagens\Icone Material IO - ' +
+              'Acao\api-black-android\res\drawable-hdpi\baseline_api_black_24.p' +
+              'ng'
+          end>
+        Align = Left
+        Margins.Left = 3.000000000000000000
+        Margins.Top = 3.000000000000000000
+        Margins.Right = 3.000000000000000000
+        Margins.Bottom = 3.000000000000000000
+        Position.X = 3.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 34.000000000000000000
+        Size.Height = 34.000000000000000000
+        Size.PlatformDefault = False
+        object FillRGBEffect2: TFillRGBEffect
+          Color = xFF1D437A
+        end
+      end
+      object ShadowEffectCabecalho: TShadowEffect
+        Distance = 3.000000000000000000
+        Direction = 45.000000000000000000
+        Softness = 0.300000011920929000
+        Opacity = 0.600000023841857900
+        ShadowColor = xFFB0BF34
+      end
+      object ImageEngrenagem: TImage
+        MultiResBitmap.Height = 54
+        MultiResBitmap.Width = 54
+        MultiResBitmap.LoadSize = 2
+        MultiResBitmap = <
+          item
+            Width = 27
+            Height = 27
+            PNG = {
+              89504E470D0A1A0A0000000D494844520000001B0000001B08060000008DD4F4
+              55000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              00BD49444154484BED95B10DC23014445D505252300005052350B00923310863
+              300423300003C01D7092F5A528F783DDF9494F8EA5284F9663B90C064B59C1CD
+              F7D166FB1B5330748577E87E600F1FF0F2992538C0277C4127A810DFE7985EE1
+              113AC118E27C1173C1662131156C1E123178825D42A20ECA2E217186758C2BEC
+              42BD47D2391669E2CFC0153AC7224D0C698FDC7368331512CD827321F1777007
+              9D9088C1D46DB18637E8848482BC2D786BA460902BCCC0DB221D1A0C40296F20
+              9A5372CEFD5BF40000000049454E44AE426082}
+            FileName = 
+              'C:\Lab RX CE\API Loja Integrada App\Imagens\Icone Material IO - ' +
+              'Navegacao\close-black-android\res\drawable-hdpi\baseline_close_b' +
+              'lack_18.png'
+          end>
+        Align = Right
+        Margins.Left = 3.000000000000000000
+        Margins.Top = 3.000000000000000000
+        Margins.Right = 3.000000000000000000
+        Margins.Bottom = 3.000000000000000000
+        Position.X = 283.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 34.000000000000000000
+        Size.Height = 34.000000000000000000
+        Size.PlatformDefault = False
+        OnClick = ImageEngrenagemClick
+        object FillRGBEffect1: TFillRGBEffect
+          Color = xFF1D437A
+        end
+      end
+      object LabelTitulo: TLabel
+        Align = Client
+        Margins.Left = 3.000000000000000000
+        Margins.Right = 3.000000000000000000
+        Size.Width = 234.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxheaderlabel'
+        Text = 'API - Listar Categorias'
+        TabOrder = 0
+      end
+    end
+  end
+  object RESTClient1: TRESTClient
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'utf-8, *;q=0.8'
+    BaseURL = 'https://api.awsli.com.br/v1/categoria'
+    Params = <
+      item
+        Name = 'format'
+        Value = 'json'
+      end
+      item
+        Name = 'chave_api'
+        Value = 'ecf8e5e3cbe0004184b9'
+      end
+      item
+        Name = 'chave_aplicacao'
+        Value = 'af0b6e4c-1141-46a2-8545-46c16cd8db71'
+      end>
+    Left = 80
+    Top = 298
+  end
+  object RESTRequest1: TRESTRequest
+    Client = RESTClient1
+    Params = <>
+    Response = RESTResponse1
+    SynchronizedEvents = False
+    Left = 80
+    Top = 352
+  end
+  object RESTResponse1: TRESTResponse
+    ContentType = 'application/json'
+    Left = 80
+    Top = 408
+  end
+  object RESTResponseDataSetAdapter1: TRESTResponseDataSetAdapter
+    Active = True
+    Dataset = FDMemTableCategoria
+    FieldDefs = <>
+    ResponseJSON = RESTResponse1
+    RootElement = 'objects'
+    Left = 80
+    Top = 464
+  end
+  object FDMemTableCategoria: TFDMemTable
+    Active = True
+    FieldDefs = <
+      item
+        Name = 'categoria_pai'
+        DataType = ftWideString
+        Size = 255
+      end
+      item
+        Name = 'descricao'
+        DataType = ftWideString
+        Size = 255
+      end
+      item
+        Name = 'id'
+        DataType = ftWideString
+        Size = 255
+      end
+      item
+        Name = 'id_externo'
+        DataType = ftWideString
+        Size = 255
+      end
+      item
+        Name = 'nome'
+        DataType = ftWideString
+        Size = 255
+      end
+      item
+        Name = 'resource_uri'
+        DataType = ftWideString
+        Size = 255
+      end
+      item
+        Name = 'seo'
+        DataType = ftWideString
+        Size = 255
+      end
+      item
+        Name = 'url'
+        DataType = ftWideString
+        Size = 255
+      end>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    Left = 80
+    Top = 512
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = FDMemTableCategoria
+    ScopeMappings = <>
+    Left = 216
+    Top = 400
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 216
+    Top = 461
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = GridCategoria
+      Columns = <
+        item
+          MemberName = 'id'
+          Width = 84
+        end
+        item
+          MemberName = 'nome'
+          Width = 128
+        end
+        item
+          MemberName = 'descricao'
+          Width = 164
+        end
+        item
+          MemberName = 'categoria_pai'
+          Width = 96
+        end
+        item
+          MemberName = 'id_externo'
+          Width = 74
+        end
+        item
+          MemberName = 'resource_uri'
+          Width = 255
+        end
+        item
+          MemberName = 'seo'
+          Width = 255
+        end
+        item
+          MemberName = 'url'
+          Width = 720
+        end>
+    end
+    object LinkGridToDataSourceBindSourceDB2: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB2
+      GridControl = GridParametros
+      Columns = <
+        item
+          MemberName = 'Key'
+          Width = 149
+        end
+        item
+          MemberName = 'Value'
+          Width = 250
+        end>
+    end
+    object LinkFillControlToField1: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Control = ListViewCategoria
+      Track = True
+      FillDataSource = BindSourceDB1
+      FillDisplayFieldName = 'descricao'
+      AutoFill = True
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillHeaderFieldName = 'nome'
+      FillBreakGroups = <>
+    end
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB3
+      FieldName = 'BaseURL'
+      Control = EditURL
+      Track = False
+    end
+  end
+  object BindSourceDB2: TBindSourceDB
+    DataSet = DataModulePrincipal.FDMemTableParametroHTTP
+    ScopeMappings = <>
+    Left = 216
+    Top = 352
+  end
+  object ActionListApiListarCategorias: TActionList
+    Left = 216
+    Top = 514
+    object ActionVoltar: TAction
+      Text = 'Voltar'
+      OnExecute = ActionVoltarExecute
+    end
+    object ActionRequest: TAction
+      Text = 'Request'
+      OnExecute = ActionRequestExecute
+    end
+  end
+  object BindSourceDB3: TBindSourceDB
+    DataSet = DataModulePrincipal.FDMemTableParametroSistema
+    ScopeMappings = <>
+    Left = 216
+    Top = 296
+  end
+end

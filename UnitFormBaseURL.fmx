@@ -1,0 +1,200 @@
+object FormBaseURL: TFormBaseURL
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 592
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 3
+  object LayoutBaseURL: TLayout
+    Align = Contents
+    Size.Width = 320.000000000000000000
+    Size.Height = 592.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object RectangleTapaFundo: TRectangle
+      Align = Contents
+      Fill.Color = xE63D4260
+      Size.Width = 320.000000000000000000
+      Size.Height = 592.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+    end
+    object LayoutCabecalho: TLayout
+      Align = MostTop
+      Size.Width = 320.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object RectangleFundoDoCabecalho: TRectangle
+        Align = Contents
+        Fill.Color = claWhite
+        Size.Width = 320.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+      end
+      object ShadowEffectCabecalho: TShadowEffect
+        Distance = 3.000000000000000000
+        Direction = 45.000000000000000000
+        Softness = 0.200000002980232200
+        Opacity = 0.850000023841857900
+        ShadowColor = xFFB0BF34
+      end
+      object ImageSalva: TImage
+        MultiResBitmap.Height = 72
+        MultiResBitmap.Width = 72
+        MultiResBitmap.LoadSize = 2
+        MultiResBitmap = <
+          item
+            Width = 27
+            Height = 27
+            PNG = {
+              89504E470D0A1A0A0000000D494844520000001B0000001B08060000008DD4F4
+              55000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              013449444154484BED96316A024114863721450A2F1030E02152A6D02A042C85
+              B4112F60699F03E40441418414496DA99094815C20658A14290453080924DFBF
+              3B2EBA8EBB33EB2A29FCE0E3CDC8EA9B79F31C0DF614C181898B54B085E570E6
+              C71D3E47C36CCEF07703A7788E56923BBBC536BEA1EB0A4BD88886215F788999
+              EFEFA256A8E88ACAEEB4C343138B46BB1DE252C26D25134AA8468BD966B21592
+              0DA2B3BA461DF2A75E70E008D77D4D7AD88C86ABCC1BA428971A6DA765FCF7C9
+              DE718CAE671AE393EC07D53CA758C313EC606ED21AE4066DF4D1F6BCCCDD208F
+              262679303113DF32DA989998894FB20B1393D44DF426EDCC74935771912BFC46
+              DBF332F5CCD24AA28B75844FA80F79C57BD475B58E0F13AD68E5B615E655BF75
+              31B6FF204AA8F21C87B37C4C70802FE16C4F7104C11F264D7B2F5EE48B340000
+              000049454E44AE426082}
+            FileName = 
+              'C:\Lab RX CE\API Loja Integrada App\Imagens\Icone Material IO - ' +
+              'Conteudo\save-black-android\res\drawable-hdpi\baseline_save_blac' +
+              'k_18.png'
+          end>
+        Align = Right
+        Margins.Left = 3.000000000000000000
+        Margins.Top = 3.000000000000000000
+        Margins.Right = 3.000000000000000000
+        Margins.Bottom = 3.000000000000000000
+        Position.X = 283.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 34.000000000000000000
+        Size.Height = 34.000000000000000000
+        Size.PlatformDefault = False
+        OnClick = ImageSalvaClick
+        object FillRGBEffect1: TFillRGBEffect
+          Color = xFF1D437A
+        end
+      end
+      object LabelTitulo: TLabel
+        Align = Client
+        Margins.Left = 3.000000000000000000
+        Margins.Right = 3.000000000000000000
+        Size.Width = 234.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxheaderlabel'
+        Text = 'Base URL'
+        TabOrder = 0
+      end
+      object ImageIconeCabecalho: TImage
+        MultiResBitmap.Height = 72
+        MultiResBitmap.Width = 72
+        MultiResBitmap.LoadSize = 2
+        MultiResBitmap = <
+          item
+            Width = 27
+            Height = 27
+            PNG = {
+              89504E470D0A1A0A0000000D494844520000001B0000001B08060000008DD4F4
+              55000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              014049444154484BED94B12E054114409728144A8542A15090D02994128556A2
+              54886889880F50F801093D8952E113140A8D9E8E844242474242C239DECCCBBC
+              C9DB7D8BD29EE4E4EEDE9D9D9DD9B9334543C3FFA42FC4320670B475D9E6095F
+              7008874D24DCE347EBB21E83B88B77F8D9C5151463FEEC19CF71131D6825E378
+              857927A9551F4BBDC07CE66D1C890D6CF8886B38816399FE3E31E6CFA6701B9D
+              A1FD9C605796D10636F4C5BF308BEF687F7326242D907D5CC73DDC3291701862
+              15AB21464E71110F70C344CA193A92B82629E67B99B383E68FBFEFA03F44790B
+              D122C939AA614EECE73AC40E2C574762719456514D2CAC57B4BF051339EEAF58
+              F6C6F990FB0956E812C63DEAD2943283CECC8665D6DD6737D851D5E99AC9254E
+              A26BE0B1F41B3CCAACE869BC3511E975368E60FE2BABCE4679C0586C0D0D0D45
+              F10543F76CECD13A30880000000049454E44AE426082}
+            FileName = 
+              'C:\Lab RX CE\API Loja Integrada App\Imagens\Icone Material IO - ' +
+              'Conteudo\link-black-android\res\drawable-hdpi\baseline_link_blac' +
+              'k_18.png'
+          end>
+        Align = Left
+        Margins.Left = 3.000000000000000000
+        Margins.Top = 3.000000000000000000
+        Margins.Right = 3.000000000000000000
+        Margins.Bottom = 3.000000000000000000
+        Position.X = 3.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 34.000000000000000000
+        Size.Height = 34.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object RectangleBaseURL: TRectangle
+      Align = VertCenter
+      Fill.Color = xE6FFFFFF
+      Position.Y = 275.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 81.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object LabelBaseURL: TLabel
+        Align = Top
+        Margins.Left = 8.000000000000000000
+        Margins.Top = 16.000000000000000000
+        Margins.Right = 8.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 304.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxheaderlabel'
+        Text = 'Informe a BaseURL:'
+        TabOrder = 0
+      end
+      object EditBaseURL: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 1
+        Text = 
+          'https://comunidade.lojaintegrada.com.br/t/api-de-integracao-loja' +
+          '-integrada/52862'
+        Position.X = 8.000000000000000000
+        Position.Y = 36.000000000000000000
+        Margins.Left = 8.000000000000000000
+        Margins.Top = 3.000000000000000000
+        Margins.Right = 8.000000000000000000
+        Size.Width = 304.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = DataModulePrincipal.FDMemTableParametroSistema
+    ScopeMappings = <>
+    Left = 240
+    Top = 528
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 132
+    Top = 525
+  end
+  object ActionList1: TActionList
+    Left = 32
+    Top = 528
+    object ActionRetorna: TAction
+      Text = 'Retorna'
+      OnExecute = ActionRetornaExecute
+    end
+  end
+end

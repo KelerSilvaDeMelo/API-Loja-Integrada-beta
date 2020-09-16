@@ -1,0 +1,15 @@
+﻿[FDMemTableParametroHTTPValue]
+Coordinates=366,53,183,33
+
+[FDMemTableParametroHTTP]
+Coordinates=10,10,156,87
+
+[FDMemTableParametroHTTPKey]
+Coordinates=366,105,175,33
+
+[FDMemTableParametroSistema]
+Coordinates=176,10,172,69
+
+[FDMemTableParametroSistemaBaseURL]
+Coordinates=366,1,218,33
+
