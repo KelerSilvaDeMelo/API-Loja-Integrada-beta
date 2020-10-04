@@ -149,7 +149,7 @@ object FormApiListarCategorias: TFormApiListarCategorias
           TabOrder = 3
           RowCount = 3
           Viewport.Width = 304.000000000000000000
-          Viewport.Height = 188.000000000000000000
+          Viewport.Height = 151.000000000000000000
         end
         object LabelURI: TLabel
           Align = Top
@@ -199,8 +199,8 @@ object FormApiListarCategorias: TFormApiListarCategorias
           Size.Height = 503.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 0
-          Viewport.Width = 320.000000000000000000
-          Viewport.Height = 503.000000000000000000
+          Viewport.Width = 312.000000000000000000
+          Viewport.Height = 495.000000000000000000
         end
       end
       object TabItemJsomParseGrid: TTabItem
@@ -224,9 +224,9 @@ object FormApiListarCategorias: TFormApiListarCategorias
           Size.Height = 503.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 0
-          RowCount = 9
+          RowCount = 0
           Viewport.Width = 320.000000000000000000
-          Viewport.Height = 503.000000000000000000
+          Viewport.Height = 471.000000000000000000
         end
       end
     end
@@ -357,11 +357,9 @@ object FormApiListarCategorias: TFormApiListarCategorias
       end
       item
         Name = 'chave_api'
-        Value = 'ecf8e5e3cbe0004184b9'
       end
       item
         Name = 'chave_aplicacao'
-        Value = 'af0b6e4c-1141-46a2-8545-46c16cd8db71'
       end>
     Left = 80
     Top = 298

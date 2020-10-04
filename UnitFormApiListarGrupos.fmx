@@ -347,9 +347,9 @@ object FormApiListarGrupos: TFormApiListarGrupos
           Size.Height = 503.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 0
-          RowCount = 3
+          RowCount = 0
           Viewport.Width = 320.000000000000000000
-          Viewport.Height = 466.000000000000000000
+          Viewport.Height = 471.000000000000000000
         end
       end
     end
@@ -365,11 +365,9 @@ object FormApiListarGrupos: TFormApiListarGrupos
       end
       item
         Name = 'chave_api'
-        Value = 'ecf8e5e3cbe0004184b9'
       end
       item
         Name = 'chave_aplicacao'
-        Value = 'af0b6e4c-1141-46a2-8545-46c16cd8db71'
       end>
     Left = 80
     Top = 314

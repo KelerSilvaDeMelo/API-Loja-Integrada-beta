@@ -136,7 +136,7 @@ object FormApiSeo: TFormApiSeo
       Size.Height = 552.000000000000000000
       Size.PlatformDefault = False
       TabHeight = 49.000000000000000000
-      TabIndex = 1
+      TabIndex = 0
       TabOrder = 1
       TabPosition = PlatformDefault
       Sizes = (
@@ -152,7 +152,7 @@ object FormApiSeo: TFormApiSeo
         CustomIcon = <
           item
           end>
-        IsSelected = False
+        IsSelected = True
         Size.Width = 80.000000000000000000
         Size.Height = 49.000000000000000000
         Size.PlatformDefault = False
@@ -203,7 +203,7 @@ object FormApiSeo: TFormApiSeo
         CustomIcon = <
           item
           end>
-        IsSelected = True
+        IsSelected = False
         Size.Width = 80.000000000000000000
         Size.Height = 49.000000000000000000
         Size.PlatformDefault = False
@@ -365,11 +365,9 @@ object FormApiSeo: TFormApiSeo
       end
       item
         Name = 'chave_api'
-        Value = 'ecf8e5e3cbe0004184b9'
       end
       item
         Name = 'chave_aplicacao'
-        Value = 'af0b6e4c-1141-46a2-8545-46c16cd8db71'
       end>
     Left = 80
     Top = 314
